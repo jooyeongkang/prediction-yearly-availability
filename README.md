@@ -6,10 +6,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br/>
@@ -19,10 +16,10 @@
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
-  <summary>Questions</summary>
+  <summary>Steps</summary>
   <ol>
-    <li><a href="#q1">How long did it take to solve the problem?</a></li>
-    <li><a href="#q2">What software language and libraries did you use to solve the problem? Why did you choose these languages/libraries?</a></li>
+    <li><a href="#data-description">Data Description</a></li>
+    <li><a href="#eda">Exploratory Data Analysis (EDA)</a></li>
     <li><a href="#q3">What steps did you take to prepare the data for the project? Was any cleaning necessary?</a></li>
     <li><a href="#q4">What machine learning method did you apply?</a>
     <li><a href="#q5">Why did you choose this method?</a>
@@ -37,13 +34,26 @@
   </ol>
 </details>
 
-<!-- Q1 -->
-<h3 id="q1">Q1. How long did it take you to solve the problem?</h3>
+<!-- Data Description -->
+<h3 id="data-description">Data Description</h3>
 
-I spent 2 hours exploring the data and training a simple regression model with basic feature engineering techniques, such as normalization and encoding categorical features. After this first attempt, I spent 4 extra hours researching more advanced techniques across all learning processes and experimenting with a variety of combinations of feature engineering and models.
+Column | Description
+:---|:---
+`id` | The unique ID assigned to every hotel.
+`region` | The region in which the hotel is located..
+`latitude` | The latitude of the hotel.
+`longitude` | The longitude of the hotel.
+`accommodation_type` | The type of accommodation offered by the hotel. For example: Private room, Entire house/apt, etc.
+`cost` | The cost of booking the hotel for one night. (in \$\$)
+`minimum_nights` | The minimum number of nights stay required.
+`number_of_reviews` | The number of reviews accumulated by the hotel.
+`reviews_per_month` | The average number of reviews received by the hotel per month.
+`owner_id` | The unique ID assigned to every owner. An owner can own multiple hotels.
+`owned_hotels` | The number of hotels owned by the owner.
+`yearly_availability` | It indicates if the hotel accepts bookings around the year. Values are 0 (not available for 365 days in a year) and 1 (available for 365 days in a year).
 
-<!-- Q2 -->
-<h3 id="q2">Q2. What software language and libraries did you use to solve the problem? Why did you choose these languages/libraries?</h3>
+<!-- EDA -->
+<h3 id="eda">Exploratory Data Analysis (EDA)</h3>
 
 <h4>Language: Python</h4>
 I used Python because it is the most common and powerful programming language in the data science domain with fancy and advanced libraries for solving a variety of problems.
